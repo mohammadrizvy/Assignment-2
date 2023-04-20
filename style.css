@@ -231,6 +231,7 @@ body {
   font-size: 16px;
   color: #727272;
 }
+/* Cards  */
 
 .cards {
   margin-top: 50px;
@@ -243,49 +244,24 @@ body {
   margin-bottom: 50px;
 }
 
+.card:hover {
+  rotate: 45deg;
+}
+
 .card {
   border: 1px solid #ff900e;
   border-radius: 5px;
   padding: 10px;
-  transition: all 5s;
-}
-.card:hover {
-  border: 4px dashed #ff0e22;
-  background-color: rgb(65, 13, 255);
-  border-radius: 30%;
-  color: rgb(7, 7, 7);
-  transform: rotate(360deg);
-}
-.card:hover img {
-  transform: rotate(360deg);
-}
-.card:hover .number {
-  transform: rotate(360deg);
-  color: rgb(7, 7, 7);
-}
-.card:hover .description {
-  color: rgb(7, 7, 7);
-  transform: rotate(360deg);
-}
-.card:hover .description {
-  color: rgb(7, 7, 7);
-  transform: rotate(360deg);
-}
-.card img {
-  padding: 5px;
-  width: 45px;
-  transition: all 5s;
+  transition: 0.5s ease-in-out;
 }
 .card .number {
   font-size: 25px;
   color: #424242;
-  transition: all 5s;
 }
 .card-description {
   font-weight: 500;
   font-size: 16px;
   color: #727272;
-  transition: all 5s;
 }
 
 /* Sponsers Styles  */
@@ -354,11 +330,11 @@ body {
   color: #727272;
   margin-bottom: 24px;
 }
-footer{
-    background: #151414;
+footer {
+  background: #151414;
 }
 .subscribe {
-    margin-top: 50px;
+  margin-top: 50px;
   display: flex;
   gap: 100px;
   color: white;
@@ -389,4 +365,3 @@ footer{
   height: 51px;
   box-sizing: border-box;
 }
-
