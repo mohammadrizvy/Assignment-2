@@ -1,7 +1,7 @@
 /* ! Font link  */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans";
 }
 
 * {
@@ -98,7 +98,7 @@ body {
   margin-top: 80px;
 }
 .quick-list-image {
-  width: 50%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -106,11 +106,11 @@ body {
 .quick-list-image img {
   width: 250px;
   height: 250px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .quick-list-details {
-  width: 50%;
+  width: 100%;
   padding: 200px 0 0 150px;
 }
 
@@ -249,9 +249,12 @@ body {
 }
 
 .card {
-  border: 1px solid #ff900e;
+  border-left: #ff900e solid 5px;
+  border-bottom: #ff800e solid 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   transition: 0.5s ease-in-out;
 }
 .card .number {
@@ -364,4 +367,67 @@ footer {
   border-radius: 5px;
   height: 51px;
   box-sizing: border-box;
+}
+
+/* Mobile Responsive  */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-title {
+    margin-bottom: 20px;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .container-img img {
+    width: 300px;
+  }
+  .quick-list {
+    flex-direction: column-reverse;
+  }
+  .quick-list-image {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .quick-list-image img {
+    width: 220px;
+    height: 220px;
+    align-items: center;
+  }
+  .quick-list-details {
+    padding: 0%;
+    width: 100%;
+  }
+  .features {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .cards {
+    margin-top: 10px;
+    display: grid;
+    padding-top: 50px;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sponspors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .sponspors img {
+   margin-left: 70px;
+    height: 100%;
+    width: 50%;
+    filter: grayscale(5);
+    -webkit-filter: grayscale(5);
+  }
+  .subscribe{
+    flex-direction: column;
+  }
+}
+
+/* Hiding sections */
+.hide {
+  display: none;
 }
